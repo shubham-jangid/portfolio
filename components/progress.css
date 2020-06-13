@@ -39,6 +39,9 @@
   margin-left: 80px;
   max-width: 90%;
   height: auto;
+  /* animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; */
 }
 
 /* Media Query */

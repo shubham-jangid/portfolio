@@ -31,6 +31,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.13.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="components/header.css" />
     <link rel="stylesheet" href="components/greeting.css" />
@@ -39,6 +40,7 @@
     <link rel="stylesheet" href="components/progress.css" />
     <link rel="stylesheet" href="components/splash.css" />
     <link rel="stylesheet" href="components/contact.css" />
+    <!-- <link rel="stylesheet" href="components/animation.css" /> -->
   </head>
 
   <body>
@@ -122,7 +124,7 @@
             </div>
           </div>
         </div>
-        <div class="greeting-image-div">
+        <div class="greeting-image-div" data-aos="fade-up-left">
           <img
             alt="shubham sitting on table"
             src="/assets/images/manOnTable.svg"
@@ -133,34 +135,13 @@
 
     <div class="main" id="skills">
       <div class="skills-header-div">
-        <h1
-          class="skills-header"
-          style="
-            animation-fill-mode: both;
-            animation-duration: 2000ms;
-            animation-delay: 0ms;
-            animation-iteration-count: 1;
-            opacity: 1;
-            animation-name: react-reveal-699278882033932-4;
-          "
-        >
+        <h1 class="skills-header">
           What I Do?
         </h1>
       </div>
       <div>
         <div class="skills-main-div">
-          <div
-            class="skills-image-div"
-            style="
-              animation-fill-mode: both;
-              backface-visibility: visible;
-              animation-duration: 2000ms;
-              animation-delay: 0ms;
-              animation-iteration-count: 1;
-              opacity: 1;
-              animation-name: react-reveal-699278882033932-5;
-            "
-          >
+          <div class="skills-image-div" data-aos="fade-right">
             <img
               alt="shubham-making website"
               src="/assets/images/fullstack.589bec7d.svg"
@@ -349,18 +330,7 @@
         </div>
 
         <div class="skills-main-div">
-          <div
-            class="skills-image-div"
-            style="
-              animation-fill-mode: both;
-              backface-visibility: visible;
-              animation-duration: 2000ms;
-              animation-delay: 0ms;
-              animation-iteration-count: 1;
-              opacity: 1;
-              animation-name: react-reveal-699278882033932-5;
-            "
-          >
+          <div class="skills-image-div" data-aos="fade-right">
             <img
               alt="shubham jangid"
               src="/assets/images/ui_ux_design.67a6a11c (1).svg"
@@ -554,13 +524,13 @@
           <div class="meter"><span style="width: 80%;"></span></div>
         </div>
       </div>
-      <div class="skills-image">
+      <div class="skills-image" data-aos="fade-left">
         <img alt="Skills" src="/assets/images/skill.34409398.svg" />
       </div>
     </div>
 
     <div id="contact-details" class="address-heading-div">
-      <div class="contact-heading-img-div">
+      <div class="contact-heading-img-div" data-aos="fade-up">
         <img src="/assets/images/address_image.3b021f8f.svg" alt="" />
       </div>
       <div class="address-heading-text-div">
@@ -598,5 +568,29 @@
       />
       by Shubham Jangid
     </p>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        //   // Global settings:
+        //   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        //   startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        //   initClassName: "aos-init", // class applied after initialization
+        //   animatedClassName: "aos-animate", // class applied on animation
+        //   useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        //   disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        //   debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        //   throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        //   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        //   offset: 120, // offset (in px) from the original trigger point
+        //   delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 800, // values from 0 to 3000, with step 50ms
+        easing: "ease-in-out", // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        //   mirror: false, // whether elements should animate out while scrolling past them
+        //   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
   </body>
 </html>

@@ -76,9 +76,15 @@
   .skills-image-div {
     /* display: none; */
     order: 2;
+    /* animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; */
   }
   .skills-image-div > img {
     margin-top: 0px;
+    /* animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; */
   }
 }
 

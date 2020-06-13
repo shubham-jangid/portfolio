@@ -43,6 +43,9 @@
 .greeting-image-div > img {
   max-width: 100%;
   height: auto;
+  /* animation-name: moveInRight; */
+  /* animation-duration: 1s;
+  animation-timing-function: ease-out; */
 }
 .App {
   text-align: center;

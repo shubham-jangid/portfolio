@@ -35,6 +35,8 @@
 .contact-heading-img-div {
   align-items: center;
   justify-content: center;
+  /* animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards; */
 }
 
 .blog-heading-img-div {
